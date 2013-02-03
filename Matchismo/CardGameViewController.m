@@ -14,6 +14,10 @@
 
 @implementation CardGameViewController
 
+- (IBAction)flipCard:(UIButton*)sender {
+    sender.selected = !sender.isSelected;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
