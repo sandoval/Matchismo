@@ -19,6 +19,11 @@
 
 @implementation CardGameViewController
 
+- (IBAction)reloadGame:(UIButton *)sender {
+    self.game = nil;
+    [self updateUI];
+}
+
 - (CardMatchingGame*) game {
     if (!_game)
         _game = [[CardMatchingGame alloc] initWithCardCount:[self.cardButtons count]

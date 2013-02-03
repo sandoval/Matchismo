@@ -279,6 +279,22 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="POp-70-8hS">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="XGA-55-KRV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="reload-icon.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="reloadGame:" destination="2" eventType="touchUpInside" id="Wgm-Rw-8kw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -294,6 +310,7 @@
                             <constraint firstItem="x6i-73-ONO" firstAttribute="leading" secondItem="KZH-C3-eDJ" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="7w3-KM-Ym9"/>
                             <constraint firstItem="6BX-pk-Hri" firstAttribute="bottom" secondItem="Fgm-T7-S3s" secondAttribute="bottom" type="default" id="8Kk-lT-fK3"/>
                             <constraint firstItem="fnI-JG-u0b" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="8fa-m2-GB4"/>
+                            <constraint firstItem="POp-70-8hS" firstAttribute="centerX" secondItem="yRC-zC-kMg" secondAttribute="centerX" type="default" id="8gk-pI-Fdz"/>
                             <constraint firstItem="ZLe-BZ-sES" firstAttribute="leading" secondItem="6BX-pk-Hri" secondAttribute="leading" type="default" id="BBP-25-css"/>
                             <constraint firstItem="x6i-73-ONO" firstAttribute="top" secondItem="hLf-vV-159" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="BLQ-5M-nOe"/>
                             <constraint firstItem="6BX-pk-Hri" firstAttribute="top" secondItem="rQe-pk-omL" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="BkY-p7-JBV"/>
@@ -337,6 +354,7 @@
                             <constraint firstItem="rQe-pk-omL" firstAttribute="baseline" secondItem="Pw5-Jc-bpV" secondAttribute="baseline" type="default" id="s7E-dQ-lLp"/>
                             <constraint firstItem="mNV-5p-kJS" firstAttribute="top" secondItem="ZLe-BZ-sES" secondAttribute="top" type="default" id="sIw-BS-HE2"/>
                             <constraint firstItem="Qpw-wf-om1" firstAttribute="leading" secondItem="VEN-Cs-KUQ" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="t30-xO-7lS"/>
+                            <constraint firstAttribute="bottom" secondItem="POp-70-8hS" secondAttribute="bottom" constant="15" id="t7e-uj-obb"/>
                             <constraint firstItem="Qpw-wf-om1" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="uHA-lT-8i9"/>
                             <constraint firstItem="VEN-Cs-KUQ" firstAttribute="baseline" secondItem="frL-tA-VcW" secondAttribute="baseline" type="default" id="uin-yR-cpE"/>
                             <constraint firstItem="ZLe-BZ-sES" firstAttribute="leading" secondItem="mNV-5p-kJS" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="wU3-1T-GlV"/>
@@ -373,11 +391,15 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="reload-icon.png" width="30" height="31"/>
+    </resources>
     <classes>
         <class className="CardGameViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CardGameViewController.h"/>
             <relationships>
                 <relationship kind="action" name="flipCard:" candidateClass="UIButton"/>
+                <relationship kind="action" name="reloadGame:" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="flipsLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="lastPlayLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="scoreLabel" candidateClass="UILabel"/>

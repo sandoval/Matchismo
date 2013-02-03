@@ -23,6 +23,7 @@
 		3570E16A16BE9CE1002473DD /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 3570E16916BE9CE1002473DD /* PlayingCard.m */; };
 		3570E16D16BEA0F3002473DD /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 3570E16C16BEA0F3002473DD /* PlayingCardDeck.m */; };
 		35801F6F16BF099A008E1A13 /* CardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 35801F6E16BF099A008E1A13 /* CardMatchingGame.m */; };
+		35801F7316BF1E90008E1A13 /* reload-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 35801F7216BF1E90008E1A13 /* reload-icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		3570E16C16BEA0F3002473DD /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCardDeck.m; path = Model/PlayingCardDeck.m; sourceTree = "<group>"; };
 		35801F6D16BF099A008E1A13 /* CardMatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardMatchingGame.h; path = Model/CardMatchingGame.h; sourceTree = "<group>"; };
 		35801F6E16BF099A008E1A13 /* CardMatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardMatchingGame.m; path = Model/CardMatchingGame.m; sourceTree = "<group>"; };
+		35801F7216BF1E90008E1A13 /* reload-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reload-icon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 		3570E14516BD5AE0002473DD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				35801F7216BF1E90008E1A13 /* reload-icon.png */,
 				3570E14D16BD5AE0002473DD /* CardGameAppDelegate.h */,
 				3570E14E16BD5AE0002473DD /* CardGameAppDelegate.m */,
 				3570E14616BD5AE0002473DD /* Matchismo-Info.plist */,
@@ -197,6 +200,7 @@
 				3570E15316BD5AE0002473DD /* Default@2x.png in Resources */,
 				3570E15516BD5AE0002473DD /* Default-568h@2x.png in Resources */,
 				3570E15816BD5AE0002473DD /* MainStoryboard.storyboard in Resources */,
+				35801F7316BF1E90008E1A13 /* reload-icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
