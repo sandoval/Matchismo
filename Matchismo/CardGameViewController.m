@@ -9,13 +9,20 @@
 #import "CardGameViewController.h"
 
 @interface CardGameViewController ()
-
+@property (weak, nonatomic) IBOutlet UILabel *flipsLabel;
+@property (nonatomic) NSUInteger flipCount;
 @end
 
 @implementation CardGameViewController
 
 - (IBAction)flipCard:(UIButton*)sender {
     sender.selected = !sender.isSelected;
+    self.flipCount++;
+}
+
+- (void) setFlipCount:(NSUInteger)flipCount {
+    _flipCount = flipCount;
+    self.flipsLabel.text = [NSString stringWithFormat:@"Flips: %d", self.flipCount];
 }
 
 - (void)viewDidLoad
