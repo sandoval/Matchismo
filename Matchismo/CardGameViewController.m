@@ -9,10 +9,8 @@
 #import "CardGameViewController.h"
 
 @interface CardGameViewController ()
-@property (weak, nonatomic) IBOutlet UILabel *flipsLabel;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 @property (weak, nonatomic) IBOutlet UILabel *lastPlayLabel;
-@property (nonatomic) NSUInteger flipCount;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;
 @property (strong, nonatomic) CardMatchingGame* game;
 @end
@@ -50,15 +48,8 @@
 }
 
 - (IBAction)flipCard:(UIButton*)sender {
-    if (!sender.isSelected)
-        self.flipCount++;
     [self.game flipCardAtIndex:[self.cardButtons indexOfObject:sender]];
     [self updateUI];
-}
-
-- (void) setFlipCount:(NSUInteger)flipCount {
-    _flipCount = flipCount;
-    self.flipsLabel.text = [NSString stringWithFormat:@"Flips: %d", self.flipCount];
 }
 
 - (void)viewDidLoad
