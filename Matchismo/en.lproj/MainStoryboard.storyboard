@@ -87,6 +87,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UQD-Ha-ogV">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="5XI-a0-2Ng"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
                                 <state key="normal" title="">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -101,9 +104,6 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLf-vV-159">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="82" id="zwF-K3-qWp"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
                                 <state key="normal" title="">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -146,6 +146,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZH-C3-eDJ">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Luu-py-BuM"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
                                 <state key="normal" title="">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -160,9 +163,6 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x6i-73-ONO">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="0DB-uO-nRp"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
                                 <state key="normal" title="">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -212,6 +212,73 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nFK-3F-O1A">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="hQS-Ja-Yam"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <state key="normal" title="">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="A♣"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="Sh7-7g-YyR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bxu-st-pw1">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="jnH-wL-ocb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <state key="normal" title="">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="A♣"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="exo-wF-YvG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mNV-5p-kJS">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <state key="normal" title="">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="A♣"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="hfA-c3-xl2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLe-BZ-sES">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <state key="normal" title="">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="A♣"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="5LN-hA-Nse"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Touch the cards to play" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yRC-zC-kMg">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -227,50 +294,62 @@
                             <constraint firstItem="x6i-73-ONO" firstAttribute="leading" secondItem="KZH-C3-eDJ" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="7w3-KM-Ym9"/>
                             <constraint firstItem="6BX-pk-Hri" firstAttribute="bottom" secondItem="Fgm-T7-S3s" secondAttribute="bottom" type="default" id="8Kk-lT-fK3"/>
                             <constraint firstItem="fnI-JG-u0b" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="8fa-m2-GB4"/>
-                            <constraint firstItem="hLf-vV-159" firstAttribute="top" secondItem="UQD-Ha-ogV" secondAttribute="top" type="default" id="8we-6X-z01"/>
-                            <constraint firstItem="6BX-pk-Hri" firstAttribute="baseline" secondItem="Fgm-T7-S3s" secondAttribute="baseline" type="default" id="9K1-CK-kv8"/>
+                            <constraint firstItem="ZLe-BZ-sES" firstAttribute="leading" secondItem="6BX-pk-Hri" secondAttribute="leading" type="default" id="BBP-25-css"/>
                             <constraint firstItem="x6i-73-ONO" firstAttribute="top" secondItem="hLf-vV-159" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="BLQ-5M-nOe"/>
                             <constraint firstItem="6BX-pk-Hri" firstAttribute="top" secondItem="rQe-pk-omL" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="BkY-p7-JBV"/>
                             <constraint firstItem="KZH-C3-eDJ" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Cjw-GK-JEy"/>
+                            <constraint firstAttribute="trailing" secondItem="ZLe-BZ-sES" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Cyy-PZ-hfa"/>
                             <constraint firstItem="UQD-Ha-ogV" firstAttribute="top" secondItem="frL-tA-VcW" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="EB5-BD-Je0"/>
                             <constraint firstItem="Pw5-Jc-bpV" firstAttribute="leading" secondItem="Qpw-wf-om1" secondAttribute="leading" type="default" id="Fbm-yD-cGo"/>
+                            <constraint firstItem="bxu-st-pw1" firstAttribute="baseline" secondItem="nFK-3F-O1A" secondAttribute="baseline" type="default" id="G61-AU-KGY"/>
                             <constraint firstItem="rQe-pk-omL" firstAttribute="leading" secondItem="Pw5-Jc-bpV" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="Gz8-wE-kGR"/>
+                            <constraint firstItem="yRC-zC-kMg" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="HKG-rw-KEX"/>
+                            <constraint firstItem="x6i-73-ONO" firstAttribute="leading" secondItem="bxu-st-pw1" secondAttribute="leading" type="default" id="IZb-Zv-hss"/>
                             <constraint firstItem="hLf-vV-159" firstAttribute="top" secondItem="VEN-Cs-KUQ" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Jsm-nf-Q3K"/>
                             <constraint firstItem="UQD-Ha-ogV" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="KXV-sr-gzK"/>
                             <constraint firstItem="hLf-vV-159" firstAttribute="baseline" secondItem="UQD-Ha-ogV" secondAttribute="baseline" type="default" id="KpL-A5-ShD"/>
-                            <constraint firstItem="x6i-73-ONO" firstAttribute="baseline" secondItem="KZH-C3-eDJ" secondAttribute="baseline" type="default" id="P2d-9D-CAs"/>
-                            <constraint firstItem="x6i-73-ONO" firstAttribute="baseline" secondItem="6BX-pk-Hri" secondAttribute="baseline" type="default" id="PWP-iK-kbN"/>
+                            <constraint firstItem="bxu-st-pw1" firstAttribute="leading" secondItem="nFK-3F-O1A" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="LE7-aH-JF6"/>
                             <constraint firstItem="Fgm-T7-S3s" firstAttribute="top" secondItem="Pw5-Jc-bpV" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="QZV-Hu-Dah"/>
                             <constraint firstAttribute="bottom" secondItem="ecQ-es-loP" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="RHT-fY-hKY"/>
                             <constraint firstItem="ecQ-es-loP" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Ro3-Q2-mXU"/>
                             <constraint firstItem="rQe-pk-omL" firstAttribute="top" secondItem="fnI-JG-u0b" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Sv5-RV-sSs"/>
-                            <constraint firstItem="x6i-73-ONO" firstAttribute="baseline" secondItem="Fgm-T7-S3s" secondAttribute="baseline" type="default" id="Tps-4n-T7s"/>
+                            <constraint firstItem="ZLe-BZ-sES" firstAttribute="bottom" secondItem="mNV-5p-kJS" secondAttribute="bottom" type="default" id="T2r-UD-0SN"/>
                             <constraint firstItem="x6i-73-ONO" firstAttribute="leading" secondItem="hLf-vV-159" secondAttribute="leading" type="default" id="W5A-QC-U6v"/>
+                            <constraint firstItem="VEN-Cs-KUQ" firstAttribute="baseline" secondItem="Qpw-wf-om1" secondAttribute="baseline" type="default" id="WZ0-To-NAQ"/>
+                            <constraint firstItem="nFK-3F-O1A" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="WaG-t9-d3B"/>
                             <constraint firstAttribute="trailing" secondItem="fnI-JG-u0b" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="WhJ-ne-Rb0"/>
                             <constraint firstItem="x6i-73-ONO" firstAttribute="bottom" secondItem="Fgm-T7-S3s" secondAttribute="bottom" type="default" id="XtE-D0-bdh"/>
-                            <constraint firstItem="Fgm-T7-S3s" firstAttribute="baseline" secondItem="KZH-C3-eDJ" secondAttribute="baseline" type="default" id="Yx9-ps-3RJ"/>
-                            <constraint firstItem="6BX-pk-Hri" firstAttribute="baseline" secondItem="KZH-C3-eDJ" secondAttribute="baseline" type="default" id="ZOD-8D-4cp"/>
-                            <constraint firstItem="VEN-Cs-KUQ" firstAttribute="baseline" secondItem="Qpw-wf-om1" secondAttribute="baseline" type="default" id="c1X-ZP-j51"/>
                             <constraint firstItem="Fgm-T7-S3s" firstAttribute="leading" secondItem="x6i-73-ONO" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="cJm-Hu-UOt"/>
+                            <constraint firstItem="bxu-st-pw1" firstAttribute="bottom" secondItem="mNV-5p-kJS" secondAttribute="bottom" type="default" id="d1P-dU-KPE"/>
                             <constraint firstItem="VEN-Cs-KUQ" firstAttribute="leading" secondItem="frL-tA-VcW" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="dMj-7V-oRk"/>
+                            <constraint firstItem="ecQ-es-loP" firstAttribute="top" secondItem="yRC-zC-kMg" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="f5u-C3-4e4"/>
                             <constraint firstItem="Pw5-Jc-bpV" firstAttribute="leading" secondItem="hLf-vV-159" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="guQ-aQ-1oG"/>
+                            <constraint firstAttribute="trailing" secondItem="yRC-zC-kMg" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="hpJ-O3-p8m"/>
                             <constraint firstItem="hLf-vV-159" firstAttribute="baseline" secondItem="Pw5-Jc-bpV" secondAttribute="baseline" type="default" id="i5d-oY-psd"/>
+                            <constraint firstItem="bxu-st-pw1" firstAttribute="top" secondItem="mNV-5p-kJS" secondAttribute="top" type="default" id="ikU-vV-i1F"/>
+                            <constraint firstItem="mNV-5p-kJS" firstAttribute="leading" secondItem="Fgm-T7-S3s" secondAttribute="leading" type="default" id="kYo-Sm-Xik"/>
+                            <constraint firstItem="mNV-5p-kJS" firstAttribute="leading" secondItem="bxu-st-pw1" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="lXM-at-6iT"/>
                             <constraint firstItem="6BX-pk-Hri" firstAttribute="leading" secondItem="Fgm-T7-S3s" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="lhR-xC-Wlb"/>
                             <constraint firstItem="rQe-pk-omL" firstAttribute="leading" secondItem="fnI-JG-u0b" secondAttribute="leading" type="default" id="mI8-AA-3b5"/>
                             <constraint firstItem="fnI-JG-u0b" firstAttribute="leading" secondItem="Qpw-wf-om1" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="q9C-Qh-rdI"/>
                             <constraint firstAttribute="trailing" secondItem="5cp-Nt-Xb4" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="qhQ-pQ-0kY"/>
                             <constraint firstItem="Qpw-wf-om1" firstAttribute="baseline" secondItem="fnI-JG-u0b" secondAttribute="baseline" type="default" id="rEV-K8-9bL"/>
                             <constraint firstItem="rQe-pk-omL" firstAttribute="baseline" secondItem="Pw5-Jc-bpV" secondAttribute="baseline" type="default" id="s7E-dQ-lLp"/>
+                            <constraint firstItem="mNV-5p-kJS" firstAttribute="top" secondItem="ZLe-BZ-sES" secondAttribute="top" type="default" id="sIw-BS-HE2"/>
                             <constraint firstItem="Qpw-wf-om1" firstAttribute="leading" secondItem="VEN-Cs-KUQ" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="t30-xO-7lS"/>
                             <constraint firstItem="Qpw-wf-om1" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="uHA-lT-8i9"/>
+                            <constraint firstItem="VEN-Cs-KUQ" firstAttribute="baseline" secondItem="frL-tA-VcW" secondAttribute="baseline" type="default" id="uin-yR-cpE"/>
+                            <constraint firstItem="ZLe-BZ-sES" firstAttribute="leading" secondItem="mNV-5p-kJS" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="wU3-1T-GlV"/>
                             <constraint firstItem="VEN-Cs-KUQ" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="xMJ-36-dRZ"/>
                             <constraint firstAttribute="trailing" secondItem="6BX-pk-Hri" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="xRy-L8-QoQ"/>
                             <constraint firstItem="Pw5-Jc-bpV" firstAttribute="top" secondItem="Qpw-wf-om1" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="ycT-f8-oZ6"/>
+                            <constraint firstItem="nFK-3F-O1A" firstAttribute="top" secondItem="KZH-C3-eDJ" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="yhr-fg-3Ln"/>
                             <constraint firstItem="KZH-C3-eDJ" firstAttribute="top" secondItem="UQD-Ha-ogV" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="zeS-0V-Szl"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="flipsLabel" destination="ecQ-es-loP" id="G2Z-J5-QNl"/>
+                        <outlet property="lastPlayLabel" destination="yRC-zC-kMg" id="fKJ-no-gHV"/>
                         <outlet property="scoreLabel" destination="5cp-Nt-Xb4" id="fq6-qM-Idk"/>
                         <outletCollection property="cardButtons" destination="frL-tA-VcW" id="AK3-Ox-nkV"/>
                         <outletCollection property="cardButtons" destination="VEN-Cs-KUQ" id="duo-9Z-GdT"/>
@@ -284,6 +363,10 @@
                         <outletCollection property="cardButtons" destination="x6i-73-ONO" id="pI8-yF-kX8"/>
                         <outletCollection property="cardButtons" destination="Fgm-T7-S3s" id="XLb-Pt-bTj"/>
                         <outletCollection property="cardButtons" destination="6BX-pk-Hri" id="xL1-8q-wxU"/>
+                        <outletCollection property="cardButtons" destination="nFK-3F-O1A" id="PUd-6N-Yrk"/>
+                        <outletCollection property="cardButtons" destination="bxu-st-pw1" id="GSi-pW-0ET"/>
+                        <outletCollection property="cardButtons" destination="mNV-5p-kJS" id="MkJ-nw-787"/>
+                        <outletCollection property="cardButtons" destination="ZLe-BZ-sES" id="CEg-Qz-TwF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
@@ -296,6 +379,7 @@
             <relationships>
                 <relationship kind="action" name="flipCard:" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="flipsLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lastPlayLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="scoreLabel" candidateClass="UILabel"/>
                 <relationship kind="outletCollection" name="cardButtons" candidateClass="UIButton"/>
             </relationships>
