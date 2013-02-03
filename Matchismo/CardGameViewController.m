@@ -10,31 +10,43 @@
 
 @interface CardGameViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *flipsLabel;
+@property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 @property (nonatomic) NSUInteger flipCount;
-@property (strong, nonatomic) Deck* deck;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;
+@property (strong, nonatomic) CardMatchingGame* game;
 @end
 
 @implementation CardGameViewController
 
-- (void) setCardButtons:(NSArray *)cardButtons {
-    _cardButtons = cardButtons;
-    for(UIButton* cardButton in self.cardButtons) {
-        [cardButton setTitle:[[self.deck drawRandomCard] contents] forState:UIControlStateSelected];
-    }
+- (CardMatchingGame*) game {
+    if (!_game)
+        _game = [[CardMatchingGame alloc] initWithCardCount:[self.cardButtons count]
+                                                  usingDeck:[[PlayingCardDeck alloc] init]];
+    return _game;
 }
 
-- (Deck*) deck {
-    if (!_deck) {
-        _deck = [[PlayingCardDeck alloc] init];
+- (void) setCardButtons:(NSArray *)cardButtons {
+    _cardButtons = cardButtons;
+    [self updateUI];
+}
+
+- (void) updateUI {
+    for (UIButton *cardButton in self.cardButtons) {
+        Card *card = [self.game cardAtIndex:[self.cardButtons indexOfObject:cardButton]];
+        [cardButton setTitle:card.contents forState:UIControlStateSelected];
+        [cardButton setTitle:card.contents forState:UIControlStateSelected|UIControlStateDisabled];
+        cardButton.selected = card.isFaceUp;
+        cardButton.enabled = !card.isUnplayable;
+        cardButton.alpha = card.isUnplayable ? 0.3 : 1.0;
+        self.scoreLabel.text = [NSString stringWithFormat:@"Score: %d", self.game.score];
     }
-    return _deck;
 }
 
 - (IBAction)flipCard:(UIButton*)sender {
     if (!sender.isSelected)
         self.flipCount++;
-    sender.selected = !sender.isSelected;
+    [self.game flipCardAtIndex:[self.cardButtons indexOfObject:sender]];
+    [self updateUI];
 }
 
 - (void) setFlipCount:(NSUInteger)flipCount {
