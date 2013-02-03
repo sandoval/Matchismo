@@ -14,10 +14,10 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frL-tA-VcW">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="64" id="H4u-OC-1Wp"/>
-                                    <constraint firstAttribute="height" constant="81" id="IKw-py-rNe"/>
+                                    <constraint firstAttribute="height" constant="127" id="50m-Cl-gWF"/>
+                                    <constraint firstAttribute="width" constant="101" id="lYG-gc-va2"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <state key="normal" title="">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -31,6 +31,9 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Flips: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecQ-es-loP">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="172" id="XQ4-Cy-ZmT"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -38,11 +41,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ecQ-es-loP" firstAttribute="trailing" secondItem="frL-tA-VcW" secondAttribute="trailing" type="default" id="0cb-1z-Bmf"/>
-                            <constraint firstItem="frL-tA-VcW" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="DQL-cA-Zjf"/>
-                            <constraint firstItem="frL-tA-VcW" firstAttribute="top" secondItem="3" secondAttribute="top" constant="189" id="KIX-me-a8b"/>
+                            <constraint firstItem="frL-tA-VcW" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="7cR-3m-RKS"/>
                             <constraint firstAttribute="bottom" secondItem="ecQ-es-loP" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="RHT-fY-hKY"/>
                             <constraint firstItem="ecQ-es-loP" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Ro3-Q2-mXU"/>
+                            <constraint firstItem="frL-tA-VcW" firstAttribute="top" secondItem="3" secondAttribute="top" constant="166" id="xoP-fG-qgN"/>
                         </constraints>
                     </view>
                     <connections>
