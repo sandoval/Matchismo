@@ -20,7 +20,9 @@
 
 - (Card *)cardAtIndex:(NSUInteger)index;
 
+- (BOOL) hasPlayableCardFaceUp;
+
 @property (readonly, nonatomic) int score;
 @property (readonly, strong, nonatomic) NSString *lastPlay;
-
+@property (nonatomic) int numberOfCardsToMatch;
 @end

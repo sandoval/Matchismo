@@ -287,11 +287,26 @@
                                     <action selector="reloadGame:" destination="2" eventType="touchUpInside" id="Wgm-Rw-8kw"/>
                                 </connections>
                             </button>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0pF-DT-2B4">
+                                <connections>
+                                    <action selector="switchThreeCardMatch:" destination="2" eventType="valueChanged" id="eSP-3t-I0x"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="3-card match" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXb-Qs-c28">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="a5x-pG-C2m"/>
+                                    <constraint firstAttribute="height" constant="21" id="uzb-My-SQH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Fgm-T7-S3s" firstAttribute="leading" secondItem="Pw5-Jc-bpV" secondAttribute="leading" type="default" id="1iC-oh-BFK"/>
                             <constraint firstAttribute="trailing" secondItem="rQe-pk-omL" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="2TI-e3-i5C"/>
+                            <constraint firstItem="0pF-DT-2B4" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="2xk-KQ-0kH"/>
                             <constraint firstItem="6BX-pk-Hri" firstAttribute="leading" secondItem="rQe-pk-omL" secondAttribute="leading" type="default" id="3Ue-zP-3Ms"/>
                             <constraint firstAttribute="bottom" secondItem="5cp-Nt-Xb4" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="3vf-YX-pZn"/>
                             <constraint firstItem="hLf-vV-159" firstAttribute="leading" secondItem="UQD-Ha-ogV" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="4GZ-d2-yAm"/>
@@ -318,10 +333,12 @@
                             <constraint firstItem="UQD-Ha-ogV" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="KXV-sr-gzK"/>
                             <constraint firstItem="hLf-vV-159" firstAttribute="baseline" secondItem="UQD-Ha-ogV" secondAttribute="baseline" type="default" id="KpL-A5-ShD"/>
                             <constraint firstItem="bxu-st-pw1" firstAttribute="leading" secondItem="nFK-3F-O1A" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="LE7-aH-JF6"/>
+                            <constraint firstItem="EXb-Qs-c28" firstAttribute="centerX" secondItem="0pF-DT-2B4" secondAttribute="centerX" type="default" id="Nbv-YN-Zb5"/>
                             <constraint firstItem="5cp-Nt-Xb4" firstAttribute="top" secondItem="yRC-zC-kMg" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="OwU-Mx-MUJ"/>
                             <constraint firstItem="Fgm-T7-S3s" firstAttribute="top" secondItem="Pw5-Jc-bpV" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="QZV-Hu-Dah"/>
                             <constraint firstItem="rQe-pk-omL" firstAttribute="top" secondItem="fnI-JG-u0b" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Sv5-RV-sSs"/>
                             <constraint firstItem="ZLe-BZ-sES" firstAttribute="bottom" secondItem="mNV-5p-kJS" secondAttribute="bottom" type="default" id="T2r-UD-0SN"/>
+                            <constraint firstItem="0pF-DT-2B4" firstAttribute="centerY" secondItem="5cp-Nt-Xb4" secondAttribute="centerY" type="default" id="TtW-T4-aGA"/>
                             <constraint firstItem="x6i-73-ONO" firstAttribute="leading" secondItem="hLf-vV-159" secondAttribute="leading" type="default" id="W5A-QC-U6v"/>
                             <constraint firstItem="VEN-Cs-KUQ" firstAttribute="baseline" secondItem="Qpw-wf-om1" secondAttribute="baseline" type="default" id="WZ0-To-NAQ"/>
                             <constraint firstItem="nFK-3F-O1A" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="WaG-t9-d3B"/>
@@ -352,12 +369,14 @@
                             <constraint firstAttribute="trailing" secondItem="6BX-pk-Hri" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="xRy-L8-QoQ"/>
                             <constraint firstItem="Pw5-Jc-bpV" firstAttribute="top" secondItem="Qpw-wf-om1" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="ycT-f8-oZ6"/>
                             <constraint firstItem="nFK-3F-O1A" firstAttribute="top" secondItem="KZH-C3-eDJ" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="yhr-fg-3Ln"/>
+                            <constraint firstItem="EXb-Qs-c28" firstAttribute="top" secondItem="3" secondAttribute="top" constant="441" id="yyk-Ex-UOB"/>
                             <constraint firstItem="KZH-C3-eDJ" firstAttribute="top" secondItem="UQD-Ha-ogV" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="zeS-0V-Szl"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="lastPlayLabel" destination="yRC-zC-kMg" id="fKJ-no-gHV"/>
                         <outlet property="scoreLabel" destination="5cp-Nt-Xb4" id="fq6-qM-Idk"/>
+                        <outlet property="threeCardSwitch" destination="0pF-DT-2B4" id="02s-3g-q5e"/>
                         <outletCollection property="cardButtons" destination="frL-tA-VcW" id="AK3-Ox-nkV"/>
                         <outletCollection property="cardButtons" destination="VEN-Cs-KUQ" id="duo-9Z-GdT"/>
                         <outletCollection property="cardButtons" destination="Qpw-wf-om1" id="hJX-XR-aqn"/>
@@ -389,8 +408,10 @@
             <relationships>
                 <relationship kind="action" name="flipCard:" candidateClass="UIButton"/>
                 <relationship kind="action" name="reloadGame:" candidateClass="UIButton"/>
+                <relationship kind="action" name="switchThreeCardMatch:" candidateClass="UISwitch"/>
                 <relationship kind="outlet" name="lastPlayLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="scoreLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="threeCardSwitch" candidateClass="UISwitch"/>
                 <relationship kind="outletCollection" name="cardButtons" candidateClass="UIButton"/>
             </relationships>
         </class>
