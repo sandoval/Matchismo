@@ -48,6 +48,10 @@
     return [rankStrings[self.rank] stringByAppendingString:self.suit];
 }
 
+- (NSAttributedString *) attributedContents {
+    return [[NSAttributedString alloc] initWithString:self.contents];
+}
+
 + (NSUInteger) maxRank {
     return [self rankStrings].count-1;
 }

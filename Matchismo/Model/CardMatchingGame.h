@@ -23,6 +23,6 @@
 - (BOOL) hasPlayableCardFaceUp;
 
 @property (readonly, nonatomic) int score;
-@property (readonly, strong, nonatomic) NSString *lastPlay;
+@property (readonly, strong, nonatomic) NSAttributedString* attributedLastPlay;
 @property (nonatomic) int numberOfCardsToMatch;
 @end

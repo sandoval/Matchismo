@@ -11,7 +11,7 @@
 @interface CardMatchingGame()
 @property (readwrite, nonatomic) int score;
 @property (strong, nonatomic) NSMutableArray *cards; // of Card
-@property (readwrite, strong, nonatomic) NSString *lastPlay;
+@property (readwrite, strong, nonatomic) NSAttributedString *attributedLastPlay;
 @end
 
 @implementation CardMatchingGame
@@ -23,9 +23,10 @@
     Card *card = [self cardAtIndex:index];
     if (card && !card.isUnplayable) {
         if (card.isFaceUp) {
-            self.lastPlay = @"";
+            self.attributedLastPlay = [[NSAttributedString alloc] initWithString:@""];
         } else {
-            self.lastPlay = [NSString stringWithFormat:@"Flipped %@", card.contents];
+            self.attributedLastPlay = [[NSAttributedString alloc]
+                                       initWithAttributedString:card.attributedContents];
         }
         self.score -= FLIP_COST;
         card.faceUp = !card.isFaceUp;
@@ -37,11 +38,11 @@
 
 - (void) matchCardsFacingUp {
     NSMutableArray* cardsToMatch = [[NSMutableArray alloc] init];
-    NSMutableString *cardsContents = [[NSMutableString alloc] init];
+    NSMutableAttributedString *cardsContents = [[NSMutableAttributedString alloc] initWithString:@""];
     for (Card* card in self.cards) {
         if (card.isFaceUp && !card.isUnplayable) {
             [cardsToMatch addObject:card];
-            [cardsContents appendFormat:@"%@ ", card.contents];
+            [cardsContents appendAttributedString:card.attributedContents];
         }
     }
     Card* card = [cardsToMatch lastObject];
@@ -54,15 +55,13 @@
             card.unplayable = YES;
         card.unplayable = YES;
         self.score += matchScore * MATCH_BONUS;
-        
-        self.lastPlay = [NSString stringWithFormat:@"Cards match: %@", cardsContents];
     } else {
         for (Card* card in cardsToMatch)
             card.faceUp = NO;
-        card.faceUp = NO;
-        self.score -= MISMATCH_PENALTY;
-        self.lastPlay = [NSString stringWithFormat:@"Cards don't match: %@", cardsContents];
+        card.faceUp = NO;        
     }
+    self.attributedLastPlay = [[NSAttributedString alloc]
+                               initWithAttributedString:cardsContents];
 }
 
 - (int) countOfPlayableCardsFacingUp {

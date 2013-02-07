@@ -10,7 +10,9 @@
 
 @interface Card : NSObject
 
-@property (strong, nonatomic) NSString *contents;
+@property(readonly,nonatomic) NSAttributedString* attributedContents;
+
+@property(strong,nonatomic) NSString* contents;
 
 @property (nonatomic, getter = isFaceUp) BOOL faceUp;
 

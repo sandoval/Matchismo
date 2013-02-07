@@ -11,5 +11,8 @@
 #import "CardMatchingGame.h"
 
 @interface CardGameViewController : UIViewController
-
+@property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
+@property (weak, nonatomic) IBOutlet UILabel *lastPlayLabel;
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;
+@property (strong, nonatomic) CardMatchingGame* game;
 @end
